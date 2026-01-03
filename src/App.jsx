@@ -24,9 +24,29 @@ function App() {
     <Phone phoneName="iPhone" phoneModel="13 Pro" phoneColor="Silver" phonePrice="999$"></Phone>
     <Phone phoneName="Samsung" phoneModel="Galaxy S21" phoneColor="Phantom Gray" phonePrice="799$"></Phone>
     <Phone phoneName="Google Pixel" phoneModel="6 Pro" phoneColor="Stormy Black" phonePrice="899$"></Phone>
+     <Player name="Messi" runs="100"></Player>
+     <Player name="Ronaldo" runs="120"></Player>
+     <Player name="Neymar" runs="90"></Player>
      </>
   )
 }
+
+function Player({name, runs}){
+  return (
+    <div style={{
+      border: '2px solid',
+      borderRadius: '20px',
+      margin: '10px',
+      padding: '10px',
+      flexDirection: 'inherit',
+    }}>
+      <h3>Player Details</h3>
+      <p>Name: {name}</p>
+      <p>runs: {runs}</p>
+    </div>
+  )
+}
+
 
 
 function Person(){
