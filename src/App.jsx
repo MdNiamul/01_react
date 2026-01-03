@@ -14,9 +14,14 @@ function App() {
     <Student name="Niamul" age={25}></Student>
     <Student name="Rahim" age={26}></Student>
     <Student name="Karim" age={27}></Student>
+    <Laptop model="Dell Inspiron" price="70000$" brand="Dell" color="Black" processor="Intel i7"></Laptop>
+    <Laptop model="MacBook Pro" price="150000$" brand="Apple" color="Silver" processor="M1"></Laptop>
+    <Laptop model="HP Pavilion" price="80000$" brand="HP" color="Gray" processor="Intel i5"></Laptop>
+    <Laptop model="Lenovo ThinkPad" price="90000$" brand="Lenovo" color="Black" processor="Intel i7"></Laptop>
      </>
   )
 }
+
 
 function Person(){
   return (
@@ -68,6 +73,25 @@ function Student(Props){
       <h3>Student Component</h3>
       <p>Name: {Props.name}</p>
       <p>Age: {Props.age}</p>
+    </div>
+  )
+}
+
+function Laptop(Props){
+  return(
+    <div style={{
+      border: '2px solid',
+      borderRadius: '20px',
+      margin: '10px',
+      padding: '10px',
+      flexDirection: 'inherit',
+    }}>
+      <h3>Laptop Configration</h3>
+      <p>Model: {Props.model}</p>
+      <p>Price: {Props.price}</p>
+      <p>Brand: {Props.brand}</p>
+      <p>Color: {Props.color}</p>
+      <p>Processor: {Props.processor}</p>
     </div>
   )
 }
