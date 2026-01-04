@@ -1,19 +1,37 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
+import "./App.css";
+import Libery from "./Libery";
+import Todo from './ToDo';
+
+
 
 function App() {
+
+  const singers = [
+      {id: 1, name: 'dr mahfuz', age: 30},
+      {id: 2, name: 'habib wahid', age: 32},
+      {id: 3, name: 'arnob', age: 35},
+      {id: 4, name: 'shafin ahmed', age: 40}
+    ];
+
+    const books = [
+      {id: 1, name: 'physics', price: 200},
+      {id: 2, name: 'chemistry', price: 250},
+      {id: 3, name: 'math', price: 300},
+      {id: 4, name: 'biology', price: 150}
+    ];
+    
+
   return (
     <>
+    <h1>Welcome to React Props Practice</h1>
+     <Libery books={books}></Libery>
+    
+    <Todo task="learn Javascript"></Todo>
+
     <Person></Person>
-    <Person></Person>
-    <Test></Test>
-    <Ul> </Ul>
-    <Car></Car>
-    <Student name="Niamul" age={25}></Student>
-    <Student name="Rahim" age={26}></Student>
-    <Student name="Karim" age={27}></Student>
     <Laptop model="Dell Inspiron" price="70000$" brand="Dell" color="Black" processor="Intel i7"></Laptop>
     <Laptop model="MacBook Pro" price="150000$" brand="Apple" color="Silver" processor="M1"></Laptop>
     <Laptop model="HP Pavilion" price="80000$" brand="HP" color="Gray" processor="Intel i5"></Laptop>
@@ -159,5 +177,3 @@ function Phone(Props){
 }
 
 export default App
-
-
